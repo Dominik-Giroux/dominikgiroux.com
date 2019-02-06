@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '../../services/seo.service';
+import { MetaData } from '../../models/meta-data';
+import { tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-about',
@@ -8,13 +11,20 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
 
   constructor(
+    private seoService: SeoService
   ) { }
 
-  // 'Evil Mastermind | Dominik Giroux',
-  //   'This awesome developper feeds on coffee and might one day rule over the world.',
-  //   'https://firebasestorage.googleapis.com/v0/b/dominikgiroux-7.appspot.com/o/dominik-giroux.jpg?alt=media&token=21f3c4dc-21b9-40e3-b339-f3c58d8ecc7a'
-
   ngOnInit() {
+
+    this.seoService.getMeta('about').pipe(
+      tap((tags: MetaData) => {
+        this.seoService.updateTags({
+          title: tags.title,
+          description: tags.description,
+          image: tags.image
+        });
+      })
+    ).subscribe();
 
   }
 
