@@ -1,0 +1,82 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$mat-primary: (
+    50 : #e4f8ef,
+    100 : #bcefd7,
+    200 : #90e4bd,
+    300 : #64d9a2,
+    400 : #42d08e,
+    500 : #21c87a,
+    600 : #1dc272,
+    700 : #18bb67,
+    800 : #14b45d,
+    900 : #0ba74a,
+    A100 : #d4ffe4,
+    A200 : #a1ffc3,
+    A400 : #6effa2,
+    A700 : #55ff91,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$mat-accent: (
+    50 : #efeeff,
+    100 : #d7d4ff,
+    200 : #bcb7ff,
+    300 : #a19aff,
+    400 : #8d84ff,
+    500 : #796eff,
+    600 : #7166ff,
+    700 : #665bff,
+    800 : #5c51ff,
+    900 : #493fff,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #e8e7ff,
+    A700 : #d0ceff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$app-primary: mat-palette($mat-primary); //#360013
+$app-accent:  mat-palette($mat-accent, 500, 900, A100);
+$app-warn:    mat-palette($mat-deep-orange);
+
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+
+// Typography
+$custom-typography: mat-typography-config(
+    $font-family: 'Open Sans'
+);
+
+// @include angular-material-typography($custom-typography);
+@include angular-material-theme($app-theme);

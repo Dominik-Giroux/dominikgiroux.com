@@ -1,0 +1,70 @@
+<section class="home mat-typography" fxLayout="column" fxLayoutAlign="space-around">
+
+  <!-- <div fxFlex>1</div>
+  <div fxFlex>2</div>
+  <div fxFlex>3</div>
+  <div fxFlex>4</div> -->
+
+  <div class="home-margin" fxFlex fxLayout="row" fxLayoutAlign="center center">
+    <mat-card fxFlex.gt-sm="50"  class="card mat-elevation-z3">
+      <mat-card-content fxLayout.gt-sm="row" fxLayout="column">
+        <div class="img-container" fxFlex.gt-sm="35">
+          <img mat-card-image src="https://firebasestorage.googleapis.com/v0/b/dominikgiroux-7.appspot.com/o/dominik-giroux-blanc.jpg?alt=media&token=aa0f0468-f88e-4066-9a64-d5dae3beff19"
+            alt="Photo of Dominik Giroux">
+        </div>
+        <div class="content-container" fxFlex.gt-sm="65">
+          <mat-chip-list>
+            <mat-chip color="primary" selected>
+              <strong>Hello</strong>
+            </mat-chip>
+          </mat-chip-list>
+          <h1><span>I'm </span><strong>Dominik Giroux</strong></h1>
+          <h3>Web developer and entrepreneur</h3>
+          <hr />
+          <div fxLayout="row">
+            <div fxFlex="35">
+              <strong>Age</strong><br />
+              <strong>Email</strong><br />
+              <strong>Phone</strong><br />
+            </div>
+            <div fxFlex="65">
+              <span [innerHtml]="age"></span><br />
+              <span [innerHtml]="email"></span><br />
+              <span [innerHtml]="phone"></span><br />
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-footer>
+        <mat-toolbar class="footer-icons" color="primary" fxLayout="row" fxLayoutAlign="center" fxFlexAlign="center">
+          <button mat-button>
+            <mat-icon aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </mat-icon>
+          </button>
+          <button mat-button>
+            <mat-icon aria-label="Linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </mat-icon>
+          </button>
+          <button mat-button>
+            <mat-icon aria-label="Github">
+              <i class="fab fa-github"></i>
+            </mat-icon>
+          </button>
+        </mat-toolbar>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+
+  <!-- <div fxFlex>
+    <mat-card class="card mat-elevation-z3">
+      Hello! I’m Dominik Giroux. Senior Web Developer specializing in front end development. Experienced with all
+      stages of
+      the development cycle for dynamic web projects. Well-versed in numerous programming languages including
+      JavaScript,
+      SQL, and C. Stng background in project management and customer relations.
+    </mat-card>
+  </div> -->
+
+</section>

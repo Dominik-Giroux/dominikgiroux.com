@@ -1,0 +1,17 @@
+@import 'src/assets/scss/custom';
+
+.about {
+
+//   padding-top: $default-padding;
+//   padding-bottom: $default-padding;
+
+  .card {
+    margin: $default-margin;
+  }
+
+  .header-image {
+    background-image: url('/assets/img/dominik.jpg');
+    background-size: cover;
+  }
+
+}

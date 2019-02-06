@@ -1,0 +1,14 @@
+@import 'src/assets/scss/custom';
+
+.services {
+
+  .card {
+    margin: $default-margin;
+  }
+
+  .header-image {
+    background-image: url('/assets/img/dominik.jpg');
+    background-size: cover;
+  }
+
+}

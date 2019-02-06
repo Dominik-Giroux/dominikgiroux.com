@@ -1,0 +1,17 @@
+<app-navbar (sidenavToggle)="sidenavToggle()" [mediaQueryList]="mediaQueryList"></app-navbar>
+
+<mat-sidenav-container class="app-container">
+
+  <mat-sidenav #sidenav class="app-sidenav mat-elevation-z6" position="end" [mode]="(mediaQueryList.matches) ? 'over' : 'over'">
+    <app-sidenav></app-sidenav>
+  </mat-sidenav>
+
+  <mat-sidenav-content [class.sticky-margin]="router.url !== '/'">
+
+    <router-outlet></router-outlet>
+
+    <app-footer></app-footer>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

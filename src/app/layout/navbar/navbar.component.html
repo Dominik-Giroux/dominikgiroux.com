@@ -1,0 +1,36 @@
+<mat-toolbar #navbar class="navbar" [class.mat-elevation-z6]="!navbarTransparent || router.url !== '/' || mediaQueryList.matches"
+  [class.navbar-transparent]="navbarTransparent && !mediaQueryList.matches && router.url === '/'">
+
+  <!--Brand-->
+  <button mat-button routerLink="">
+    <img *ngIf="false" class="logo-icon" src="/assets/img/dominik.jpg" alt="Logo" />
+    <h1>
+      <span class="brand left">Dominik </span>
+      <span class="brand right">Giroux</span>
+    </h1>
+  </button>
+
+  <!--Spacer-->
+  <span class="fill-remaining-space"></span>
+
+  <!--Menu-->
+  <div fxShow="true" fxHide.lt-sm="true">
+
+    <!--Menu-->
+    <section fxLayout="row">
+      <app-menu></app-menu>
+    </section>
+
+    <!--Auth-->
+    <!-- <app-navbar-auth></app-navbar-auth> -->
+
+  </div>
+
+  <!--Sidebar Toggle-->
+  <div fxHide="true" fxShow.lt-sm="true">
+    <button mat-icon-button (click)="toggle()">
+      <mat-icon aria-label="Sidenav Toggle">menu</mat-icon>
+    </button>
+  </div>
+
+</mat-toolbar>

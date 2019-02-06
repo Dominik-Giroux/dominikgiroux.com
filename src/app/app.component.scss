@@ -1,0 +1,33 @@
+@import 'src/assets/scss/_custom.scss';
+
+h1 {
+  color: $primary;
+}
+
+.app-container {
+  height: calc(100vh - $navbar-height);
+
+  @media (max-width: 600px) {
+    height: calc(100vh - $navbar-height-sm);
+  }
+
+  @media print {
+    height: 100%;
+  }
+
+  .sticky-margin {
+    margin-top: $navbar-height;
+  }
+
+  .app-sidenav {
+    margin-top: calc(#{$navbar-height} - 8px);
+    padding-left: $default-padding;
+    padding-right: $default-padding;
+
+    @media print {
+      display: none;
+    }
+
+  }
+
+}
