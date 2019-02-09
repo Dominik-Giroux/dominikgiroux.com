@@ -19,12 +19,17 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "function": "ssr"
-      }
-    ]
+    "headers": [{
+      "source": "**",
+      "headers": [{
+        "key": "Cache-Control",
+        "value": "no-cache"
+      }]
+    }],
+    "rewrites": [{
+      "source": "**",
+      "function": "ssr"
+    }]
   },
   "storage": {
     "rules": "storage.rules"

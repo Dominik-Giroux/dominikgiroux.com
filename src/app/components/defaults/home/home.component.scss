@@ -6,24 +6,17 @@
     linear-gradient(0deg,
     rgba(44, 51, 64, 0.5),
     rgba(44, 51, 64, 0.5)),
-    url('https://firebasestorage.googleapis.com/v0/b/dominikgiroux-7.appspot.com/o/home.jpg?alt=media&token=542de9b1-9659-43ee-aaaa-37060f1095e1');
+    url('/assets/img/home.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   height: calc(100vh - #{$navbar-height});
   padding: $default-padding / 2;
 
   &:before {
     background-color: rgba(44, 51, 64, 0.8);
   }
-
-  // div {
-  //   border: 1px solid black;
-  //   background: #fff;
-  //   padding: 24px;
-  //   margin-top: $navbar-height;
-  // }
 
   @include breakpoint(gt-sm) {
     padding: $default-padding;
@@ -72,7 +65,7 @@
     }
 
     .footer-icons {
-      color: $light;
+      color: $dark;
 
       mat-button {
         flex: 1 1 auto;

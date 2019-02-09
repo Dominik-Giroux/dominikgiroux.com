@@ -25,12 +25,14 @@ export class SeoService {
             ...tags
         };
 
-        console.log(tags);
-
         // Set a title
         this.titleService.setTitle(tags.title);
 
         // Set meta tags
+        this.meta.updateTag({name: 'title', content: tags.title});
+        this.meta.updateTag({name: 'description', content: tags.description});
+        this.meta.updateTag({name: 'image', content: tags.image});
+
         this.meta.updateTag({ name: 'twitter:card', content: 'summary' });
         this.meta.updateTag({ name: 'twitter:site', content: environment.sitename });
         this.meta.updateTag({ name: 'twitter:title', content: tags.title });

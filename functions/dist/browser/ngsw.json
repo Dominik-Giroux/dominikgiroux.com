@@ -1,0 +1,103 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.7b1a3b6c22026bd1ddd3.js",
+        "/polyfills.e6fbd82b34ccb0c8609f.js",
+        "/runtime.ec2944dd8b20ec099bf3.js",
+        "/scripts.806effac119676237f10.js",
+        "/styles.da7dbdcce6f1e38b4125.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/img/1.jpg",
+        "/assets/img/2.jpg",
+        "/assets/img/3.jpg",
+        "/assets/img/angular.png",
+        "/assets/img/bedrock.png",
+        "/assets/img/dominik-giroux-blanc.jpg",
+        "/assets/img/dominik-giroux.jpg",
+        "/assets/img/dominik.jpg",
+        "/assets/img/facebook.png",
+        "/assets/img/firebase.png",
+        "/assets/img/github.png",
+        "/assets/img/home.webp",
+        "/assets/img/linkedin.png",
+        "/assets/scss/_custom.scss",
+        "/assets/scss/_theme.scss"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/icons/icon-128x128.png": "cb9a66c44a077b295e02d5cf1737daa1a7c7dea0",
+    "/assets/icons/icon-144x144.png": "2af3cadc59d51cbd75f6a8ec11b25179ef577ab1",
+    "/assets/icons/icon-152x152.png": "ed02b6ce7d0f0ef29c8e5f84cea28805c55da231",
+    "/assets/icons/icon-192x192.png": "57a467e01ef5e762c6d9100494d1ee8be9fea87d",
+    "/assets/icons/icon-384x384.png": "694b51e15da872e889dee258ed9a40c913b69f15",
+    "/assets/icons/icon-512x512.png": "0c90503d274e1d454c86ae831ea9f829153ee76c",
+    "/assets/icons/icon-72x72.png": "f9e46d15917f1b22259ceae5aa8373b123390dc6",
+    "/assets/icons/icon-96x96.png": "fe79ee3494492974d5444c5ed1948744e91d42fe",
+    "/assets/img/1.jpg": "aba79d3c146134821727a1906cb100f1aa32bc82",
+    "/assets/img/2.jpg": "a5b419d4643d843302de0d862e07b45bfce9da5e",
+    "/assets/img/3.jpg": "c7ba62568a27ec40b9f87d86670497a3ed5b67e9",
+    "/assets/img/angular.png": "d1c6a37c6c27c5732d2f74a160bb3983441c1d40",
+    "/assets/img/bedrock.png": "6b6ffadc22843eb6919fe68eb8e259337a3b549b",
+    "/assets/img/dominik-giroux-blanc.jpg": "5df3241601e315b90fc0f265f5fff9354e3144c3",
+    "/assets/img/dominik-giroux.jpg": "855e723cee142169f36e6647ac663b9203a635d4",
+    "/assets/img/dominik.jpg": "2b93a1d58741c538d4641279375daeb3bc7844fa",
+    "/assets/img/facebook.png": "6403abf9177a86938cc1188d97c042cdd7b92f74",
+    "/assets/img/firebase.png": "6d069c38d38fdc11ba680f79b9ac281455531b57",
+    "/assets/img/github.png": "e73c3033f71edb10fd086b62ae55cf16e55e1d1f",
+    "/assets/img/home.webp": "6d53ed2f54704d1a01629325e7557b05966647c9",
+    "/assets/img/linkedin.png": "82c278676964119f11560d7ec6b8a8d77053ca49",
+    "/assets/scss/_custom.scss": "462111916a660bd56e99953182a06b1ab39c0c9c",
+    "/assets/scss/_theme.scss": "cad1c1239de8985a38b08f8d76761ce288de43d8",
+    "/favicon.ico": "fe94e55e1686af2ee54f2cbc4fffa1c77a568c07",
+    "/index.html": "f35fbcc85e2bd318d1af79acb03c78a2cbb73725",
+    "/main.7b1a3b6c22026bd1ddd3.js": "2a1bb06367518fa542cc6c9e2d7923cad969666e",
+    "/polyfills.e6fbd82b34ccb0c8609f.js": "4ab98e11e44c4bc97507dfc711f8420a47d6f18e",
+    "/runtime.ec2944dd8b20ec099bf3.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "/scripts.806effac119676237f10.js": "64578ccea55716fff16cb37502889712b619e46e",
+    "/styles.da7dbdcce6f1e38b4125.css": "ce1125719b9bb2e1ad48d344d78e749fcbd0b560"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

@@ -2,12 +2,9 @@
   [class.navbar-transparent]="navbarTransparent && !mediaQueryList.matches && router.url === '/'">
 
   <!--Brand-->
-  <button mat-button routerLink="">
+  <button mat-button routerLink="" role="button" aria-label="Dominik Giroux">
     <img *ngIf="false" class="logo-icon" src="/assets/img/dominik.jpg" alt="Logo" />
-    <h1>
-      <span class="brand left">Dominik </span>
-      <span class="brand right">Giroux</span>
-    </h1>
+    <h1>Dominik Giroux</h1>
   </button>
 
   <!--Spacer-->
@@ -28,7 +25,7 @@
 
   <!--Sidebar Toggle-->
   <div fxHide="true" fxShow.lt-sm="true">
-    <button mat-icon-button (click)="toggle()">
+    <button mat-icon-button (click)="toggle()" role="button" aria-label="sidenav toggle">
       <mat-icon aria-label="Sidenav Toggle">menu</mat-icon>
     </button>
   </div>

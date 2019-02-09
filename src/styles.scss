@@ -1,5 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500'); // Roboto for Material
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons'); // Material Icons
+
+// Material
 @import "~@angular/material/prebuilt-themes/purple-green.css"; // Material Default Theme
+
+// Custom Scss
 @import "assets/scss/_theme"; // Material Custom Theme
 @import 'assets/scss/_custom'; // Custom Variables
 

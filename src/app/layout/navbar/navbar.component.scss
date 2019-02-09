@@ -21,48 +21,11 @@
       color: rgba(255, 255, 255, 0.7);
     }
 
-    .brand {
-
-      &.left {
-        background: linear-gradient(to right, $primary, rgba(255, 255, 255, 0.7));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      &.right {
-        background: linear-gradient(to left, $primary, rgba(255, 255, 255, 0.7));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-    }
-
   }
 
   h1 {
     text-transform: uppercase;
-    font-weight: 700;
     color: $dark;
-  }
-
-  .brand {
-
-    &.left {
-      background: linear-gradient(to right, $primary, $dark);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    &.right {
-      background: linear-gradient(to left, $primary, $dark);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
   }
 
   .logo-icon {

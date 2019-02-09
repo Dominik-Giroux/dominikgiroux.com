@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
       })
     ).subscribe();
 
-    this.age = Math.floor(Math.abs(new Date().getTime() - new Date('1991/06/10').getTime()) / (1000 * 3600 * 24 * 365));
+    this.age = Math.floor(Math.abs(new Date().getTime() - new Date('2015/01/01').getTime()) / (1000 * 3600 * 24 * 365));
     this.email = 'giroux.dominik@gmail.com';
     this.phone = '(819) 342-0113';
 

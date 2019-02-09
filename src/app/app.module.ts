@@ -1,12 +1,11 @@
 // Modules
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './modules/material.module';
-// import { environment } from '../environments/environment';
 import { FirebaseModule } from './modules/firebase.module';
-// import * as firebase from 'firebase/app';
 
 // Services
 import { AuthService } from './services/@auth/auth.service';
@@ -28,7 +27,7 @@ import { DeleteDialogComponent } from './layout/dialogs/delete/delete.dialog.com
 import { ErrorDialogComponent } from './layout/dialogs/error/error.dialog.component';
 import { LoadingDialogComponent } from './layout/dialogs/loading/loading.dialog.component';
 
-// firebase.initializeApp(environment.firebase); // Rights Management Portal
+import { environment } from '../environments/environment';
 
 @NgModule({
   entryComponents: [
@@ -55,7 +54,8 @@ import { LoadingDialogComponent } from './layout/dialogs/loading/loading.dialog.
     AppRoutingModule,
     FlexLayoutModule,
     MaterialModule,
-    FirebaseModule
+    FirebaseModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     AuthService,
